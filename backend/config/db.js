@@ -1,12 +1,16 @@
+
 const mongoose = require('mongoose');
 
-module.exports = async function connectDB() {
-  const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/jobfinder';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/jobfinder';
+
+const connectDB = async () => {
   try {
-    await mongoose.connect(uri);
+    await mongoose.connect(MONGO_URI);
     console.log('MongoDB connected');
   } catch (err) {
-    console.error(err);
+    console.error(err.message);
     process.exit(1);
   }
-}
+};
+
+module.exports = connectDB;
