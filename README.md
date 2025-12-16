@@ -1,15 +1,91 @@
-# JobFinder MERN (Converted)
 
-This repository is a MERN-stack conversion of your original Job Finder Vite + React project.
-Frontend UI was preserved from the original project and placed under `/frontend`.
-Backend (Express + MongoDB) is under `/backend`.
+# JobFinder – MERN Stack Job Portal
 
-## Running locally (developer machine)
+## 📌 Project Overview
+JobFinder is a full-stack job portal web application designed to connect job seekers and employers on a single platform. The system allows users to search and apply for jobs, while employers can post and manage job listings. The application follows a modern MERN stack architecture with a clean separation of frontend and backend.
 
-Prerequisites:
-- Node.js 18+
-- npm
-- MongoDB (local or Atlas)
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB (Mongoose ODM)
+
+### Tools & Utilities
+- REST APIs
+- JSON Web Tokens (JWT) for authentication
+- Git & GitHub for version control
+- npm for package management
+
+---
+
+## ✨ Key Features
+
+### User Authentication
+- User registration and login
+- Secure authentication using JWT
+- Role-based access (Job Seeker / Employer)
+
+### Job Seeker Features
+- Browse available job listings
+- Search and filter jobs
+- Apply for jobs
+- View applied jobs
+
+### Employer Features
+- Post new job openings
+- Manage posted jobs
+- View applicants for jobs
+
+### General Features
+- Responsive frontend UI
+- Secure backend APIs
+- Proper frontend ↔ backend integration
+- Scalable project structure
+
+---
+
+## 📂 Project Structure
+
+```
+JobFinder_MERN/
+│
+├── frontend/        # React + Vite frontend
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/         # Node.js + Express backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## 🚀 How to Run the Project
+
+### Backend
+```bash
+cd backend
+npm install
+npm start
+```
 
 ### Frontend
 ```bash
@@ -17,20 +93,22 @@ cd frontend
 npm install
 npm run dev
 ```
-- Opens at http://localhost:5173 (the Vite dev server proxies `/api` to backend)
 
-### Backend
-```bash
-cd backend
-npm install
-# create a .env file from .env.example and set MONGO_URI if needed
-cp .env.example .env
-npm run dev   # requires nodemon, or use `npm start` to run once
-```
+---
 
-API endpoints:
-- `GET /api/jobs` — list jobs
-- `POST /api/jobs` — create job
-- `GET /api/jobs/:id` — get single job
-- `PUT /api/jobs/:id` — update job
-- `DELETE /api/jobs/:id` — delete job
+## 🎯 Use Case
+This project is suitable for:
+- Final year academic projects
+- MERN stack portfolio projects
+- Learning full-stack application architecture
+- Job portal system demonstrations
+
+---
+
+## 👨‍💻 Author
+Sachin Kumar
+
+---
+
+## 📄 License
+This project is for educational and learning purposes.
