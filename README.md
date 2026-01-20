@@ -1,114 +1,49 @@
+# Job Finder Application
 
-# JobFinder – MERN Stack Job Portal
+## Overview
+The Job Finder Application is a web-based platform designed to connect job seekers with recruiters. It enables users to search, filter, and apply for jobs, while recruiters can post and manage job listings through a structured and secure system.
 
-## 📌 Project Overview
-JobFinder is a full-stack job portal web application designed to connect job seekers and employers on a single platform. The system allows users to search and apply for jobs, while employers can post and manage job listings. The application follows a modern MERN stack architecture with a clean separation of frontend and backend.
+## Features
 
----
+### Job Seeker
+- User registration and authentication
+- Browse and search job listings
+- Filter jobs by role, location, and skills
+- View detailed job descriptions
+- Apply for jobs through the platform
 
-## 🧱 Tech Stack
-
-### Frontend
-- React.js
-- Vite
-- JavaScript (ES6+)
-- HTML5
-- CSS3
-
-### Backend
-- Node.js
-- Express.js
-
-### Database
-- MongoDB (Mongoose ODM)
-
-### Tools & Utilities
-- REST APIs
-- JSON Web Tokens (JWT) for authentication
-- Git & GitHub for version control
-- npm for package management
-
----
-
-## ✨ Key Features
-
-### User Authentication
-- User registration and login
-- Secure authentication using JWT
-- Role-based access (Job Seeker / Employer)
-
-### Job Seeker Features
-- Browse available job listings
-- Search and filter jobs
-- Apply for jobs
-- View applied jobs
-
-### Employer Features
+### Recruiter / Employer
+- Recruiter login and authentication
 - Post new job openings
-- Manage posted jobs
-- View applicants for jobs
+- Edit and manage job listings
+- View applications received
 
-### General Features
-- Responsive frontend UI
-- Secure backend APIs
-- Proper frontend ↔ backend integration
-- Scalable project structure
+### General
+- Responsive and user-friendly interface
+- Role-based access control
+- Secure authentication
+- Scalable architecture
 
----
+## Tech Stack
+- Frontend: HTML, CSS, JavaScript / React
+- Backend: Django / Node.js
+- Database: MySQL / PostgreSQL / MongoDB
 
-## 📂 Project Structure
+## Installation and Setup
 
-```
-JobFinder_MERN/
-│
-├── frontend/        # React + Vite frontend
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── backend/         # Node.js + Express backend
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│   ├── middleware/
-│   └── package.json
-│
-└── README.md
-```
+1. Clone the repository:
+git clone https://github.com/your-username/job-finder.git
 
----
+2. Navigate to the project directory:
+cd job-finder
 
-## 🚀 How to Run the Project
+3. Install dependencies and start the application.
 
-### Backend
-```bash
-cd backend
-npm install
-npm start
-```
+## Future Enhancements
+- Resume upload feature
+- Job recommendation system
+- Email notifications
+- Admin dashboard
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
----
-
-## 🎯 Use Case
-This project is suitable for:
-- Final year academic projects
-- MERN stack portfolio projects
-- Learning full-stack application architecture
-- Job portal system demonstrations
-
----
-
-## 👨‍💻 Author
+## Author
 Sachin Kumar
-
----
-
-## 📄 License
-This project is for educational and learning purposes.
